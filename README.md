@@ -1,0 +1,2 @@
+# Mysql_Query_By_Aspect
+以前自己写的一套mysql分库分表的查询代码，查询速度大概在130000tps左右
