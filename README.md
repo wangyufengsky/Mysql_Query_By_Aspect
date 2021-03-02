@@ -30,7 +30,7 @@
                    TestBean testBean8=new TestBean("ma","2","34");
                    TestBean testBean9=new TestBean("sui","2","34");
                    TestBean testBean0=new TestBean("fu","2","34");
-                   List<TestBean> beans= Stream.of(testBean1,                           testBean2,testBean3,testBean4,testBean5,testBean6,testBean7,testBean8,testBean9,testBean0).collect(Collectors.toList());
+                   List<TestBean> beans= Stream.of(testBean1, testBean2,testBean3,testBean4,testBean5,testBean6,testBean7,testBean8,testBean9,testBean0).collect(Collectors.toList());
                    JdbcEntity<TestBean> entity=new JdbcEntity.JdbcEntityBuilder<TestBean>()
                            .sql(sql)
                            .entities(beans)
