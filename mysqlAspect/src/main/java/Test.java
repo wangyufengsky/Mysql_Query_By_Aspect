@@ -70,5 +70,6 @@ public class Test {
         System.out.println(entity.toString());
         entity.getInputDeals().forEach(s-> System.out.println(s.toString()));
         List<TestBean> resultSets=entity.doSelect();
+        resultSets.forEach(System.out::println);
     }
 }

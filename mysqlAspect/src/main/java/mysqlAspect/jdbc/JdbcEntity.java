@@ -101,7 +101,7 @@ public class JdbcEntity<T> {
         List<T> resultList=new ArrayList<>();
         try {
             Map<String,List<String>> dbList=parsingSQL.parsingSQL(this);
-            resultList=new JdbcDoing<T>(this.connectionMap,dbList).jdbcSelect();
+            resultList=new JdbcDoing<T>(this.connectionMap,dbList).jdbcSelect(this.inputEntities.get(0));
         }catch (Exception e){
             log.error(e.getMessage());
             e.printStackTrace();

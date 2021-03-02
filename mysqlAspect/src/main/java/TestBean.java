@@ -3,6 +3,9 @@ public class TestBean {
     private String age;
     private String num;
 
+    public TestBean() {
+    }
+
     public TestBean(String name, String age, String num) {
         this.name = name;
         this.age = age;
